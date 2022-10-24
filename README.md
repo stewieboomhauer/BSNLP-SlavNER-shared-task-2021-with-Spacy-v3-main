@@ -16,6 +16,5 @@ This repository consists of the code for proccessing the data and training NER f
 4. (optional) Run `save_pretraining.py $folder_names` where `folder_names` are the different folder names you want to use for the pretraining corpus. Check it out [here](https://spacy.io/usage/embeddings-transformers#pretraining-details) how pretraining might help you to obtain better results.
 5. Run `python -m spacy train config_ner_ruVec_pretrain.cfg --output ./tok2vec_output` to train the model. Specify paths to the training and development sets inside the config file before training. Also you may use a pretraining corpus and choose different pretrained vectors to potentially obtain better results. By default there are vectors from `ru_core_news_lg` Russian model. You may find more info on training command and config editting [here](https://spacy.io/usage/training#quickstart)
 6. Run `python -m spacy train config_spacy_trans.cfg --output ./multilingual_output` to train the model. Specify paths to the training and development sets inside the config file before training. You can change hyperparameters there and choose different models from https://huggingface.co/models. By default the model is "bert-base-multilingual-uncased", which was used for the training.
-7. 
 
 
